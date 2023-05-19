@@ -1,12 +1,15 @@
 .card{
     box-sizing: border-box;
-    width:30%;
-    border-radius: 5px;
+    width:300px;
+    border-radius: 10px;
     border:none;
-    box-shadow: 2px 2px 20px rgb(0 0 0 / 15%);
+    box-shadow: 2px 2px 20px black;
     padding:15px 10px;
     display:flex;
     flex-direction: column;
+    margin-bottom: 15px;
+    justify-content: space-between;
+    background-color: rgb(162, 186, 190);
 }
 .card>span{
     color:red;
@@ -23,6 +26,7 @@
 .card__btnContainer{
     display:flex;
     justify-content: space-between;
+    margin:10px 0;
 }
 .card__linkBtn{
     align-self: self-end;
@@ -41,6 +45,28 @@
     box-shadow: 2px 2px 20px rgba(167, 117, 35, 0.15);
     cursor:pointer;
 }
-.card__btnContainer{
-    margin:10px 0;
-}
+.loader {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background: #FF3D00;
+    position: relative;
+    margin: 40px auto;
+  }
+  .loader:before,
+  .loader:after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    inset: 0;
+    background: #fff;
+    transform: rotate(0deg) translate(30px);
+    animation: rotate 1s ease infinite;
+  }
+  .loader:after {
+    animation-delay: 0.5s
+  }
+  @keyframes rotate {
+    100% {transform: rotate(360deg) translate(30px)
+  }
+  }     
