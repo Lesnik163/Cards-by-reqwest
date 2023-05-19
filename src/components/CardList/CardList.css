@@ -1,0 +1,46 @@
+.card{
+    box-sizing: border-box;
+    width:30%;
+    border-radius: 5px;
+    border:none;
+    box-shadow: 2px 2px 20px rgb(0 0 0 / 15%);
+    padding:15px 10px;
+    display:flex;
+    flex-direction: column;
+}
+.card>span{
+    color:red;
+}
+.card__picture > img{
+    width:100%;
+    height:100%
+}
+.card__heartBtn{
+    background-color: transparent;
+    border: none;
+    cursor:pointer;
+}
+.card__btnContainer{
+    display:flex;
+    justify-content: space-between;
+}
+.card__linkBtn{
+    align-self: self-end;
+    border: none;
+    background-color: transparent;
+}
+.card__linkBtn>a{
+    color: grey;
+    text-decoration: none;
+}
+.card__removeBtn{
+    background-color: rgb(228, 217, 189);
+    width: 150px;
+    height: 40px;
+    border-radius: 10px;
+    box-shadow: 2px 2px 20px rgba(167, 117, 35, 0.15);
+    cursor:pointer;
+}
+.card__btnContainer{
+    margin:10px 0;
+}
