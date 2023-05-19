@@ -1,6 +1,6 @@
 import React from 'react'
-import mockObject from '../../mockData'
-import { useState } from 'react';
+// import mockObject from '../../mockData'
+// import { useState } from 'react';
 import CardList from '../CardList/CardList';
 
 import './CardHolder.css'
